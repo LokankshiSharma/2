@@ -2,7 +2,7 @@ function setup(){
     canvas=createCanvas(500, 500);
   canvas.position(500,20);
   video=createCapture( VIDEO );
-  video.size(750, 600);
+  video.size(500, 600);
   PoseNet=ml5.poseNet(video, modelLoaded);
   PoseNet.on("pose", gotResult)
   }
